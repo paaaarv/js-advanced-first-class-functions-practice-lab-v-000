@@ -41,3 +41,10 @@ const reducePrice = function(agg,el,i,arr){
 const totalRevenue= function(drivers){
   return drivers.reduce(reducePrice, 0)
 }
+const avgPrice = function(agg,el,i,arr){
+  return (agg+el.revenue)/(i+1)
+}
+const averageRevenue = function(drivers){
+  return drivers.reduce(avgPrice,0)
+  
+}
