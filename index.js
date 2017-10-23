@@ -45,6 +45,6 @@ const avgPrice = function(agg,el,i,arr){
   return (agg+el.revenue)/(i+1)
 }
 const averageRevenue = function(drivers){
-  return drivers.reduce(avgPrice,0)
-  
+  return totalRevenue(drivers)/drivers.length
+
 }
