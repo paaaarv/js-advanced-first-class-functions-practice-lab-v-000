@@ -17,10 +17,11 @@ function logDriversByHometown(drivers, hometown){
   })
 }
 
+const numSorter= function(num1, num2){
+  return num1.revenue - num2.revenue
+}
 function driversByRevenue(drivers){
   let newDrivers = drivers
-  const numSorter= function(num1, num2){
-    return num1.revenue - num2.revenue
-  }
+
   return newDrivers.sort(numSorter)
 }
