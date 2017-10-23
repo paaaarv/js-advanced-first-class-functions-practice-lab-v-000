@@ -39,5 +39,5 @@ const reducePrice = function(agg,el,i,arr){
 }
 
 const totalRevenue= function(drivers){
-  return products.reduce(reducePrice, 0)
+  return drivers.reduce(reducePrice, 0)
 }
