@@ -35,8 +35,8 @@ function driversByName(drivers){
 }
 
 const reducePrice = function(agg,el,i,arr){
-  return `The total price is:`
+  return agg + el.price
 }
 function totalRevenue(reducePrice, 0){
-  
+    
 }
